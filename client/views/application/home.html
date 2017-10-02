@@ -1,0 +1,28 @@
+<template name="home">
+    <h2>Accueil</h2>
+    <h3>Poster</h3>
+    <div class="container">
+        <form  class="ui form" action="">
+            <div class="field">
+                <label>Auteur</label><input type="text" name="auteur" />
+            </div>
+            <div class="field">
+                <label>Titre</label>
+                <input type="text" name="titre" />
+            </div>
+            <div class="field">
+                <label>Contenu</label><textarea name="contenu"></textarea>
+            </div>            
+            <button class="ui button" type="submit">Envoyer</button>
+        </form>  
+    </div>
+    
+    <h3>Liste des posts</h3>
+    <ul>
+        {{ #each posts }}
+            <li><b>{{ title }}</b>, par <em>{{ auteur }}</em></li>
+        {{ /each }}
+    </ul>
+
+    {{> quickForm collection="Posts" id="insertPostForm" type="insert"}}
+</template>    

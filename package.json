@@ -6,6 +6,22 @@
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
-    "meteor-node-stubs": "~0.2.4"
+    "bcrypt": "^1.0.3",
+    "core-js": "^2.5.1",
+    "jquery": "^3.2.1",
+    "meteor-node-stubs": "~0.2.4",
+    "simpl-schema": "^0.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions"
+        ]
+      }
+    }
   }
 }
