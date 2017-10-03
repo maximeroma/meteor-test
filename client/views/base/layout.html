@@ -1,0 +1,32 @@
+<template name="mainLayout">
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        {{ setTitle "Test" }}
+        <div class="container">
+            <div class="row">
+                <header class="col-md-12 jumbotron">
+                    <h1>
+                        {{ getGlobal 'appName' }} <br />
+                        {{ #if getGlobal 'appSlogan' }}
+                            <small>{{ getGlobal 'appSlogan' }}</small>
+                        {{ /if }}
+                    </h1>
+    
+                </header>
+                <div class="row">
+                    <nav class="col-md-3"> {{ >menu }}</nav>
+                    <section class="col-md-9 well"> {{ >yield }}</section>
+                </div>
+    
+                <div class="row">
+                    <footer>
+                        <hr />
+                        <p>Propulsé par Meteor!</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </body>    
+</template>
