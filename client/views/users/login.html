@@ -1,0 +1,11 @@
+<template name='login'>
+    <h1 class="text-center">Se connecter</h1>
+    <form action="">
+        <label for="username">Nom d'utilisateur ou email</label>
+        <input type="text" id="username">
+        <label for="password">Mot de passe</label>
+        <input type="text" id="password">
+        <p><a href="{{ pathFor route='user.register' }}">Pas encore membre ?</a></p>
+        <button>Connexion</button>
+    </form>
+</template>

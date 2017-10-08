@@ -6,3 +6,6 @@ Accounts.validateNewUser(function (user) {
         throw new Meteor.Error(500, "Veuillez donner une adresse email valide");
     }
 });
+
+// var myId = Meteor.users.findOne({username:"admin"})._id;
+// Roles.addUsersToRoles(myId, ['admin']);
